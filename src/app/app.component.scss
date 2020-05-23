@@ -1,0 +1,42 @@
+:host {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 100vh;
+
+        img.avatar {
+            display: block;
+            margin: 0 auto;
+            width: 150px;
+            border-radius: 50%;
+        }
+
+        .name {
+            margin: 15px auto;
+            font-family: Merriweather, serif;
+            color: white;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            a {
+                font-family: Merriweather, serif;
+                margin: 20px;
+            }
+
+            
+            @media screen and (max-width: 420px) {
+                flex-direction: column;
+
+                a {
+                    margin: 20px auto;
+                }
+            }
+        }
+    }
+}
