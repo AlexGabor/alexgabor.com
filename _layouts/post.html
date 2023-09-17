@@ -48,6 +48,18 @@
           {% endfor %}
         </ul>
         {{ content }}
+        <br />
+        {% if page.speakerdeck %}
+        <section class="speakerdeck">
+          <script
+            async
+            class="speakerdeck-embed"
+            data-id="{{ page.speakerdeck }}"
+            data-ratio="1.77777777777778"
+            src="https://speakerdeck.com/assets/embed.js"
+          ></script>
+        </section>
+        {% endif %}
       </div>
     </div>
 
