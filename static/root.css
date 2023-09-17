@@ -100,12 +100,13 @@ img {
 
 code {
   border-radius: 10px;
+  font-family: "Fira Code", monospace;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 .language-plaintext {
   font-weight: 700;
-  padding: 2px 6px;
-  border-radius: 4px;
 }
 
 .tag {
