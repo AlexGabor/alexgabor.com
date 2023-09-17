@@ -114,6 +114,7 @@ code {
   display: flex;
   flex-wrap: wrap;
   margin-left: -16px;
+  justify-content: space-evenly;
 }
 
 .post-preview {
