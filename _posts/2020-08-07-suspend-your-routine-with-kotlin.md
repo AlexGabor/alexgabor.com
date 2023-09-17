@@ -8,6 +8,7 @@ external: false
 categories: post
 tags:
   - Android
+  - Kotlin Coroutines
 ---
 
 A presentation about Kotlin coroutines concepts. It covers:

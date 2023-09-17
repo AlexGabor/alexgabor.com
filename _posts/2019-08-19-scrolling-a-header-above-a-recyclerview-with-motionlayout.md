@@ -9,6 +9,7 @@ external_link: https://medium.com/halcyon-mobile/scrolling-a-header-above-a-recy
 categories: post
 tags:
   - Android
+  - MotionLayout
 ---
 
 ![Left: Scroll without MotionLayout. Right: Scroll with MotionLayout](https://miro.medium.com/v2/resize:fit:640/1*ACoGxbjIoQsrQS6OBrh1vQ.gif)
