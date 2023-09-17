@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ page.title }} - Alex Gabor</title>
+    <link rel="stylesheet" href="/static/root.css" type="text/css" />
+    <meta name="theme-color" content="#fbf9f3" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/base16/eighties.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+
+    <!-- and it's easy to individually load additional languages -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/go.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.0/anchor.min.js"></script>
+
+    <script>
+      hljs.highlightAll();
+    </script>
+  </head>
+  <body>
+    <div class="page-margins">
+      <header>
+        <h1 style="margin-bottom: 32px">
+          <a href="/" style="all: unset">Alex Gabor</a>
+        </h1>
+      </header>
+
+      <div class="content">
+        <h2>{{ page.title }}</h2>
+
+        <p class="date">{{ page.date | date:"%d %B %Y" }}</p>
+
+        <ul class="list-inline">
+          {% for tag in page.tags %}
+          <li class="tag">{{ tag }}</li>
+          {% endfor %}
+        </ul>
+        {{ content }}
+      </div>
+    </div>
+
+    <script>
+      (function () {
+        anchors.options.placement = "right";
+        anchors.options.icon = "#";
+        anchors.add("h3, h4");
+      })();
+    </script>
+  </body>
+</html>

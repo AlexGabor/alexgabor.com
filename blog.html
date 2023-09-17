@@ -1,0 +1,33 @@
+---
+title: Posts
+layout: default
+---
+
+<div class="post-list">
+  {% for post in site.categories.post %}
+  <div class="post-preview">
+    <a
+      href="{% if post.external %}{{ post.external_link }}{% else %}{{ post.url }}{% endif %}"
+    >
+      {% if post.thumbnail %}
+      <div
+        class="post-preview-image"
+        style="background-image: url('{{ post.thumbnail }}')"
+      ></div>
+      {% endif %}
+
+      <p class="post-preview-title">
+        {% if post.external %}🔗{% endif %}{{ post.title }}
+      </p>
+    </a>
+
+    <ul class="list-inline post-preview-tags">
+      {% for tag in post.tags %}
+      <li class="tag">{{ tag }}</li>
+      {% endfor %}
+    </ul>
+
+    <span class="date">{{ post.date | date: "%Y-%m-%d" }}</span>
+  </div>
+  {% endfor %}
+</div>
