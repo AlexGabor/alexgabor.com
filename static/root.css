@@ -96,6 +96,7 @@ img {
   margin: 32px auto;
   width: 100%;
   max-width: 500px;
+  border-radius: 10px;
 }
 
 code {
