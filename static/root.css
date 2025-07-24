@@ -74,6 +74,10 @@ p {
   margin: 24px 0px;
 }
 
+.no-margin-bottom {
+  margin-bottom: 0;
+}
+
 .list-inline {
   display: flex;
   padding-left: 0;
