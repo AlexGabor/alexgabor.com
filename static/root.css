@@ -161,3 +161,8 @@ code {
   margin-top: 8px;
   margin-bottom: 8px;
 }
+
+.no-page-break { 
+    break-inside: avoid;
+    page-break-inside: avoid;
+}
