@@ -258,7 +258,7 @@ class LoginScreenState(
 
     val loginEnabled by derivedStateOf { email.isNotEmpty() && password.isNotEmpty() }
 
-		fun onEmail(text: String) {
+    fun onEmail(text: String) {
         email = text.trim()
     }
 
