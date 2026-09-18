@@ -166,3 +166,13 @@ code {
     break-inside: avoid;
     page-break-inside: avoid;
 }
+
+.video-short {
+  display: block;
+  margin: 32px auto;
+  width: 100%;
+  max-width: 315px;
+  aspect-ratio: 9 / 16;
+  border: 0;
+  border-radius: 10px;
+}
